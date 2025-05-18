@@ -1,0 +1,37 @@
+/* Window Controls Container Desktop: apply zoom friendly size */
+.monaco-workbench:not(.web):not(.mac) .part.titlebar .window-controls-container {
+    width: calc(100px / var(--zoom-factor, 1));
+}
+
+/* Window Control Icons */
+.monaco-workbench .part.titlebar .window-controls-container > .window-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30px;
+    font-size: 16px;
+}
+
+.monaco-workbench .part.titlebar.inactive .window-controls-container > .window-icon {
+    color: rgba(255, 255, 255, 0);
+}
+
+.monaco-workbench .part.titlebar .window-controls-container > .window-icon::before {
+    height: 16px;
+    line-height: 16px;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container > .window-icon:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.monaco-workbench .part.titlebar.light .window-controls-container > .window-icon:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.monaco-workbench .part.titlebar .window-controls-container > .window-icon::before {
+    content: unset !important;
+}
+
+/* ----- Generate by java code: ----*/
